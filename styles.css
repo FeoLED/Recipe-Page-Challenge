@@ -47,9 +47,12 @@ h2{
 h3{
     color:hsl(332, 51%, 32%);
     font-weight: 900;
+    padding: 0 1em;
+    text-shadow: 0px 0px 1px hsl(332, 51%, 32%);
 }
 strong{
     font-weight: 900;
+    text-shadow: 0px 0px 1px;
 }
 .timeContainer{
     background-color:hsl(330, 100%, 98%);
@@ -57,7 +60,7 @@ strong{
     border-radius: 10px;
 }
 .timeContainer li::marker{
-    color:hsl(332, 51%, 32%);;
+    color:hsl(332, 51%, 32%);
 }
 .ingredientsDiv li::marker{
     color:hsl(14, 45%, 36%);
@@ -88,4 +91,35 @@ strong{
 
 .ingredientsDiv, .instructionsDiv, .nutritionDiv{
     width:calc(1vw*39);
+}
+.description{
+    margin-top: auto;
+}
+@media screen and (max-width:800px) {
+    .main{
+        width:calc(1vw*60);
+        padding: 0;
+        padding-bottom: 1em;
+    }
+    .picture{
+        width:calc(1vw*60);
+        border-radius: 0px;
+    }
+    h1{
+        text-align: center;
+        color:rgb(35, 35, 196);
+        padding-left:1.5em;
+        padding-right: 1.5em;
+        
+    }
+    .ingredientsDiv, .instructionsDiv, .nutritionDiv, .description{
+        padding-left:1.5em;
+        padding-right: 1.5em;
+    }
+    p,li{
+        font-size: 18px;
+    }
+    li{
+        margin-top:1em;
+    }
 }
