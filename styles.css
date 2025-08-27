@@ -1,9 +1,91 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Young Serif', serif;
+    font-weight: 100;
+    background-color: hsl(30, 54%, 90%);
+    justify-content: center;
+    align-items: center;
+}
 style, title{
     display:none;
 }
-.picture{
-    width: 250px;
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    width:calc(1vw*40);
+    background-color:  hsl(0, 0%, 100%);
+    padding:15px;
+    border-radius: 10px;
+    line-height: 1.5;
 }
-td{outline:1px solid black;
+.main h1, .main h2{
+    font-family: 'Young Serif', serif;
+}
+p, li{
+    font-size: 16px;
+    color:hsl(24, 5%, 18%);
+}
+h1{
+    
+    color:hsl(24, 5%, 18%);
+}
+footer{
+    margin-top: auto;
+}
 
+.picture{
+    width:calc(1vw*39);
+    border-radius: 10px;
+}
+h2{
+    color:hsl(14, 45%, 36%);
+}
+h3{
+    color:hsl(332, 51%, 32%);
+    font-weight: 900;
+}
+strong{
+    font-weight: 900;
+}
+.timeContainer{
+    background-color:hsl(330, 100%, 98%);
+    width:calc(1vw*39);
+    border-radius: 10px;
+}
+.timeContainer li::marker{
+    color:hsl(332, 51%, 32%);;
+}
+.ingredientsDiv li::marker{
+    color:hsl(14, 45%, 36%);
+}
+.instructionsDiv li::marker{
+    color:hsl(14, 45%, 36%);
+    font-weight: 900;
+
+}
+.nutritionDiv, .instructionsDiv{
+    border-top: solid 1px hsl(30, 18%, 87%);
+}
+.nRow{
+    display: flex;
+    
+}
+.cal, .carb, .pro{
+    border-bottom: solid 1px hsl(30, 18%, 87%);
+}
+
+.nValue{
+    color:hsl(14, 45%, 36%);
+}
+
+.nRow p{
+    width:50%;
+}
+
+.ingredientsDiv, .instructionsDiv, .nutritionDiv{
+    width:calc(1vw*39);
 }
