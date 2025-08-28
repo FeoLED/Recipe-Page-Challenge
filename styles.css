@@ -95,6 +95,23 @@ strong{
 .description{
     margin-top: auto;
 }
+
+footer{
+    font-family: "Outfit", sans-serif;
+    width:calc(1vw*50);
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2vh;
+    line-height: 1.5;
+}
+footer a{
+    color:black;
+    text-decoration:none;
+}
+footer a:hover{
+    text-shadow: 0px 0px 3px rgb(221, 180, 165);
+    color:coral;
+}
 @media screen and (max-width:800px) {
     .main{
         width:calc(1vw*70);
