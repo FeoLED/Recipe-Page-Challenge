@@ -97,27 +97,30 @@ strong{
 }
 @media screen and (max-width:800px) {
     .main{
-        width:calc(1vw*60);
-        padding: 0;
-        padding-bottom: 1em;
+        width:calc(1vw*70);
+        padding:0 1em;
+        position: relative;
     }
     .picture{
-        width:calc(1vw*60);
+        width: calc(100% + 2em);
+        position: relative;
         border-radius: 0px;
+    }
+    .timeContainer{
+        width:calc(1vw*69);
     }
     h1{
         text-align: center;
-        color:rgb(35, 35, 196);
-        padding-left:1.5em;
-        padding-right: 1.5em;
+        padding: auto 1em;
         
     }
     .ingredientsDiv, .instructionsDiv, .nutritionDiv, .description{
-        padding-left:1.5em;
-        padding-right: 1.5em;
+      width: calc(1vw*69);
+   
     }
     p,li{
-        font-size: 18px;
+        font-size: 16px;
+
     }
     li{
         margin-top:1em;
