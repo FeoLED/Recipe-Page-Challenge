@@ -25,7 +25,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: ![GitHub repo]((https://github.com/FeoLED/Recipe-Page-Challenge )
+- Solution URL: ![GitHub repo]((https://github.com/FeoLED/Recipe-Page-Challenge)
 - Live Site URL: ![GitHub Pages Site](https://feoled.github.io/Recipe-Page-Challenge/)
 
 ## My process
