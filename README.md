@@ -15,7 +15,6 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -36,24 +35,24 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 - Semantic HTML5 markup
 - Flexbox
 - Mobile-first workflow
-- Bunny Fonts 
+- Fonts served by Bunny Fonts 
 
 
 ### What I learned
 
-While working on this, I got to experience with the calc() function. A few days prior this project, I learned about various functions from CSS, and I tried to apply
-what I learned. I have to say is very convenient for responsive design. For example, on a screen over 900px wide, I applied to the main element:
+While working on this, I got to experiment with the calc() function. A few days before starting this project, I learned about various CSS functions, and I tried to apply
+what I learned. I have to say is very convenient for responsive design. For example, for screens over 900px wide, I applied the following to the main element:
 
 ```css
 .main{
     width:calc(1vh*40);
 }
 ```
-That way the elements adapt to the screen or navigator window.
+This allows the element to adapt to the size of the screen or browser window.
 
 Another thing I learned, or more like "revisited" was the position property. While working on the mobile layout, I had to exempt the image (img) element from
-the padding from its main parent. I tried different approaches. From changing the width (which worked just a little) to play with negative margins and paddings.
-The final solution was to apply position relative to both main and image, then I had to change the image's width so it covered for the main's padding:
+the padding from its main parent. I tried different approaches, from changing the width (which worked somewhat) to playing with negative margins and padding.
+The final solution was to apply  position: relative; to both the main and the img element. I then changed the image's width to account for the padding on its parent container:
 
 ```css
 .picture{
@@ -62,23 +61,21 @@ The final solution was to apply position relative to both main and image, then I
     border-radius: 0px;
 }
 ```
-
-There are other changes related with the main's width, padding and other elements, focused on the mobile layout. I used @media queries to apply the changes. 
+There were other changes related to the main element's width, padding, and other elements, all focused on the mobile layout. I used @media queries to apply the changes. 
 
 
 ### Continued development
 
-I want to point out how useful is the calc() function, and how cumbersome it was to find the proper "solution" to the "image mobile layout". Even if it worked, I'm not quite 
+I want to point out how useful the calc() function is, and how cumbersome it was to find the proper solution for the image in the mobile layout. Even if it worked, I'm not quite 
 familiar with positioning. I'll try to apply more of these techniques in the future. 
 
-*(This is a biased opinion but I didn't enjoy solving that situation, positioning right now feels alien and not that good)*
+*(A small aside: While the solution worked, I found the process of using positioning to be unintuitive. It's an area I look forward to understanding better in future projects.)*
 
 ### Useful resources
 
-- [This question at Stack Overflow](https://stackoverflow.com/questions/64665752/how-to-get-image-to-ignore-parent-div-padding) - Here they dicuss the problem with the padding and
-  image child element. I toggled mine around until I got the result I wanted so keep in mind playing around to get the hang of it.
+- [This question on Stack Overflow](https://stackoverflow.com/questions/64665752/how-to-get-image-to-ignore-parent-div-padding) - Here they discuss a similar problem... I experimented with different values until I got the result I wanted, which is a good approach to get the hang of these CSS concepts.
 
 ## Author
 
 - Website - [FeoLED](https://github.com/FeoLED)
-- Frontend Mentor - [@yFeoLED](https://www.frontendmentor.io/profile/FeoLED)
+- Frontend Mentor - [@FeoLED](https://www.frontendmentor.io/profile/FeoLED)
